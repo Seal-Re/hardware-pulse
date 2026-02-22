@@ -1,0 +1,18 @@
+# Security: Ignore local environment and config files
+.env
+*.env
+application-local.yml
+*local*.yml
+
+# Python
+__pycache__/
+*.pyc
+
+# Maven
+**/target/
+
+# OS
+.DS_Store
+
+# Local scratch
+._secops_diff/

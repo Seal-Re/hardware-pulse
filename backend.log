@@ -1,0 +1,42 @@
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.5)
+
+2026-02-20T11:17:17.305Z  INFO 28594 --- [           main] c.h.backend.HardwarePulseApplication     : Starting HardwarePulseApplication v0.0.1-SNAPSHOT using Java 17.0.18 with PID 28594 (/data/data/com.termux/files/home/hardware-pulse_run/hardware-pulse-backend/target/hardware-pulse-backend-0.0.1-SNAPSHOT.jar started by u0_a280 in /data/data/com.termux/files/home/hardware-pulse_run)
+2026-02-20T11:17:17.324Z DEBUG 28594 --- [           main] c.h.backend.HardwarePulseApplication     : Running with Spring Boot v3.2.5, Spring v6.1.6
+2026-02-20T11:17:17.327Z  INFO 28594 --- [           main] c.h.backend.HardwarePulseApplication     : No active profile set, falling back to 1 default profile: "default"
+2026-02-20T11:17:19.276Z  INFO 28594 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2026-02-20T11:17:19.280Z  INFO 28594 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-20T11:17:19.679Z  INFO 28594 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 379 ms. Found 3 JPA repository interfaces.
+2026-02-20T11:17:19.725Z  INFO 28594 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2026-02-20T11:17:19.727Z  INFO 28594 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-02-20T11:17:19.759Z  INFO 28594 --- [           main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.hardwarepulse.backend.repository.PriceHistoryRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-02-20T11:17:19.760Z  INFO 28594 --- [           main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.hardwarepulse.backend.repository.RawListingRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-02-20T11:17:19.761Z  INFO 28594 --- [           main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.hardwarepulse.backend.repository.StandardSkuRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-02-20T11:17:19.761Z  INFO 28594 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15 ms. Found 0 Redis repository interfaces.
+2026-02-20T11:17:20.820Z  INFO 28594 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-02-20T11:17:20.850Z  INFO 28594 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-02-20T11:17:20.850Z  INFO 28594 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2026-02-20T11:17:20.977Z  INFO 28594 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-02-20T11:17:20.981Z  INFO 28594 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3378 ms
+2026-02-20T11:17:21.330Z  INFO 28594 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-20T11:17:21.483Z  INFO 28594 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2026-02-20T11:17:21.553Z  INFO 28594 --- [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-02-20T11:17:22.046Z  INFO 28594 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-20T11:17:22.110Z  INFO 28594 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-02-20T11:17:22.479Z  INFO 28594 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@ac4e690
+2026-02-20T11:17:22.484Z  INFO 28594 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-02-20T11:17:22.787Z  WARN 28594 --- [           main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-20T11:17:25.376Z  INFO 28594 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-20T11:17:25.611Z  INFO 28594 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-20T11:17:27.355Z  WARN 28594 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-20T11:17:28.481Z  INFO 28594 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2026-02-20T11:17:28.509Z  INFO 28594 --- [           main] c.h.backend.HardwarePulseApplication     : Started HardwarePulseApplication in 13.038 seconds (process running for 14.22)
+2026-02-20T11:17:29.239Z  WARN 28594 --- [           main] io.netty.util.internal.MacAddressUtil    : Failed to find a usable hardware address from the network interfaces; using random bytes: fa:41:19:c6:31:68:8a:a6
+2026-02-20T11:17:29.806Z  INFO 28594 --- [           main] c.h.backend.worker.SpiderSeedRunner      : Spider seeds ensured. total=5 newlyAddedZset=0
+2026-02-20T11:17:29.811Z  INFO 28594 --- [           main] c.h.backend.worker.ListingConsumer       : ListingConsumer started. queue=queue.raw_listings.unprocessed

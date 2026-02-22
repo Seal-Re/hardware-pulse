@@ -1,0 +1,21 @@
+redis:
+  host: "127.0.0.1"
+  port: 6379
+
+backend:
+  ingest_url: "http://127.0.0.1:8080/api/pulse/raw"
+
+device:
+  adb: "127.0.0.1:5555"
+  atx_agent_path: "/data/local/tmp/atx-agent"
+
+thresholds:
+  X99: 9999.0
+  N100: 9999.0
+  CX341A: 9999.0
+  "DDR4 ECC 32G": 9999.0
+
+debug:
+  ui_debug: false
+  ui_trace: false
+  dump_path: ""

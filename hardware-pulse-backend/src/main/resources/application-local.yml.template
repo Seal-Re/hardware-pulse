@@ -1,0 +1,9 @@
+spring:
+  datasource:
+    url: <YOUR_KEY_HERE>
+    username: <YOUR_KEY_HERE>
+    password: <YOUR_KEY_HERE>
+
+app:
+  llm:
+    api-key: <YOUR_KEY_HERE>

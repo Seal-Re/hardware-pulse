@@ -1,0 +1,7 @@
+playwright==1.40.0
+redis==5.0.1
+loguru==0.7.2
+python-dotenv==1.0.0
+uiautomator2==3.2.6
+requests==2.32.3
+PyYAML==6.0.2
