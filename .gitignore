@@ -1,18 +1,56 @@
-# Security: Ignore local environment and config files
+# ── Security: local env & config ───────────────────────────────
 .env
 *.env
+!.env.example
 application-local.yml
 *local*.yml
 
-# Python
+# ── Python ─────────────────────────────────────────────────────
 __pycache__/
 *.pyc
+*.pyo
+.venv/
+venv/
 
-# Maven
+# ── Java / Maven ───────────────────────────────────────────────
 **/target/
+*.iml
+.idea/
+.settings/
+.classpath
+.project
 
-# OS
+# ── Rust ───────────────────────────────────────────────────────
+hardware-pulse-edge/target/
+
+# ── Logs ───────────────────────────────────────────────────────
+*.log
+logs/
+dmesg_*
+full_logcat.log
+tombstones_*
+termux_death.log
+termux_sys.log
+edge_build_err.txt
+
+# ── Release / binary artifacts ────────────────────────────────
+*.zip
+*.tar
+*.tar.gz
+atx-agent
+atx/atx
+atx/atx.tar
+hardware-pulse-release.zip
+hardware-pulse-termux.zip
+
+# ── Runtime data ──────────────────────────────────────────────
+data/*.db
+data/*.db-shm
+data/*.db-wal
+
+# ── OS / editor ────────────────────────────────────────────────
 .DS_Store
+Thumbs.db
 
-# Local scratch
+# ── Local scratch ──────────────────────────────────────────────
 ._secops_diff/
